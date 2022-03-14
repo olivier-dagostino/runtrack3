@@ -9,10 +9,25 @@
 // https://demarchesadministratives.fr/actualites/calendrier-des-jours-feries-20
 // 19-2020-2021
 
-function jourtravaille(Date) {
+function jourtravaille(date) {
 
-    var jourferier = ['01/01/2020','13/04/2020','01/05/2020','08/05/2020','21/05/2020','01/06/2020','14/07/2020', '15/08/2020','01/11/2020','11/11/2020','25/12/2020'];
+    var date_du_jour = new Date(date);
+
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    var date_fr = date_du_jour.toLocaleDateString('fr-FR', options);
+   
+   
+    var joursFeries = ["2020-01-01","2020-04-13","2020-05-01","2020-05-08","2020-05-21","2020-06-01","2020-07-14","2020-08-15","2020-11-01","2020-11-11","2020-12-25"];
     
-    
+    if (joursFeries.includes(date) == true) {
+        console.log("Le " + date_fr + " est un jour férié");
+    }
+    else if (date_du_jour.getDay() == 6 || date_du_jour.getDay() == 0 ){
+        console.log("Non, " + date_fr + " est un week-end");
+    }
+    else {
+        console.log("Oui, " + date_fr + " est un jour travaillé");
+    }
 
 }
+jourtravaille('2020/12/01');
