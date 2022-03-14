@@ -2,5 +2,6 @@
 // l’affichage de sorte à ce que le message ne soit plus écrit dans une popup
 // mais dans la console web. Assurez-vous que tout est bien fonctionnel.
 
+'use strict';
 
 console.log('Hello Javascript');

@@ -3,6 +3,7 @@
 // l’ensemble des jours de la semaine, du Lundi au Dimanche. Ensuite à
 // l’aide d’une boucle for (for!), affichez un par un ces jours.
 
+'use strict';
 
 function afficherjourssemaines() {
 

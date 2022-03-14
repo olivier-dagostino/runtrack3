@@ -2,5 +2,6 @@
 // Modifiez vos fichiers de sorte à ce que l’affichage de la popup se fasse
 // maintenant dans le fichier script.js.
 
+'use strict';
 
 window.alert("Hello Javascript");

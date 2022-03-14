@@ -9,6 +9,8 @@
 // https://demarchesadministratives.fr/actualites/calendrier-des-jours-feries-20
 // 19-2020-2021
 
+'use strict';
+
 function jourtravaille(date) {
 
     var date_du_jour = new Date(date);
@@ -30,4 +32,3 @@ function jourtravaille(date) {
     }
 
 }
-jourtravaille('2020/12/01');

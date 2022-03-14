@@ -3,4 +3,6 @@
 //     javascript permettant d’afficher une popup qui contient le texte “Hello
 //     Javascript!”.
 
+'use strict';
+
 window.alert("Hello Javascript");

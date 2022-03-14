@@ -5,6 +5,7 @@
 // - Si le nombre est un multiple de 5, affichez “Buzz”.
 // - Si le nombre est un multiple de 3 et de 5, affichez “FizzBuzz”.
 
+'use strict';
 
 function fizzbuzz() {
 

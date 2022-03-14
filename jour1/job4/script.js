@@ -7,6 +7,8 @@
 // “année”. Si l’année est bisextile, la fonction retourne true, sinon elle
 // retourne false.
 
+'use strict';
+
 function Bisextile(annee)
 {
 if ((annee%4==0) && ((annee%100!=0) || (annee%400==0))) return true;
