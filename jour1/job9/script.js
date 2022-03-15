@@ -4,7 +4,6 @@
 // doit trier le tableau dans l’ordre ascendant ou décroissant, selon le
 // paramètre passé, puis retourner le tableau.
 
-
 'use strict';
 
 function tri(numbers,order) {
@@ -20,7 +19,7 @@ function tri(numbers,order) {
         var new_tab = numbers.sort(function(a, b) {
             return b - a;
           });
-
+n
         return new_tab;
         
     }
