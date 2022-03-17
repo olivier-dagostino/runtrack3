@@ -1,0 +1,2 @@
+Jquery est une librairie développé en JS
+Fait pour faciliter les choses
