@@ -5,10 +5,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
     btn.addEventListener("click", function(){
 
         fetch('expression.txt')
-        .then((response) =>  
-            response.text())
-        .then((response) => 
-            console.log(response)
-        )
+
+        .then((response) => response.text())
+        .then((response) => console.log(response))
+        
     })
 })
