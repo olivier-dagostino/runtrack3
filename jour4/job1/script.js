@@ -7,7 +7,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
         fetch('expression.txt')
 
         .then((response) => response.text())
-        .then((response) => console.log(response))
+        .then((response) => {
+            let newp = document.createElement('p');
+            newp.innerHTML = response;
+            btn.after(newp);
+        })
+        .catch();
         
     })
 })
+
+//.then((response) => console.log(response))
