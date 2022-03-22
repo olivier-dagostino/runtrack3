@@ -22,6 +22,7 @@ body {
         
         width: calc(40% - 2 * 10px); /*Soustraction de 2*10px pour la margin a gauche et a droite de l'élément*/
         display: inline-block;
+        
     }
 
     

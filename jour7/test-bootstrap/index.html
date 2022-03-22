@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- On met le lien vers le css BS AVANT le lien vers style.css perso afin que nos style écrase les styles BS par defaut -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Lien vers la bibliothèque d'icones fourni par BS5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Lien vers mon css perso -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Test Bootstrap</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Structure</h2>
+      <!-- Sans précision, base de 12 colonne répartie égalitairement -->
+      <div class="row">
+        <div class="col bg-primary">Première colonne</div>
+        <div class="col bg-info">Deuxième colonne</div>
+      </div>
+      <!-- On précise la répartition que l'on souhaite -->
+      <div class="row">
+        <div class="col-8 bg-success">Première colonne de 8</div>
+        <div class="col-4 bg-info">Deuxième colonne de 4</div>
+      </div>
+      <hr />
+      <h2>Exemples de couleurs</h2>
+      <!-- p-3 pour PADDING global de 3 rem / mb-2 pour MARGIN BOTTOM de 2 rem / bg pour BACKGROUND -->
+      <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+      <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+      <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+      <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+      <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+      <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+      <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+      <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+      <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+      <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+      <hr />
+      <h2>Responsive : Breakpoints</h2>
+      <div class="row">
+        <!-- Sans précision, c'est MOBILE FIRST (<576px) -->
+        <div class="col-6 col-md-4 col-lg-3 bg-primary">Colonne 1</div>
+        <div class="col-6 col-md-8 col-lg-9 bg-secondary">Colonne 2</div>
+      </div>
+      <hr />
+      <h2>Exemples Gutters + custom padding</h2>
+      <!-- Class utilitaire g de 1 à 5 (x pour horizontale et y pour vertical) -->
+      <div class="row gx-5">
+        <div class="col">
+          <div class="p-3 bg-info">Custom column padding</div>
+        </div>
+        <div class="col">
+          <div class="p-3 bg-info">Custom column padding</div>
+        </div>
+      </div>
+      <hr />
+      <h2>Exemples d'Offset</h2>
+      <div class="row">
+        <div class="col-md-4 bg-primary">.col-md-4</div>
+        <div class="col-md-4 offset-md-4 bg-secondary">
+          .col-md-4 .offset-md-4
+        </div>
+      </div>
+      <hr />
+      <!-- Class utilitaire pour personnaliser les FONTS -->
+      <h1>Je suis un H1</h1>
+      <h1 class="fw-bold">Je suis un H1 plus bold</h1>
+      <h2>Je suis un H2</h2>
+      <h2 class="fw-light">Je suis un H2 plus light</h2>
+      <hr />
+      <!-- fs- de 3 à 6 reproduit les tailles de font de h1 à h6 -->
+      <h3 class="fs-3 fs-md-2">
+        Je suis un h3 et en format medium je ressemble à un h2 !
+      </h3>
+      <hr />
+      <div class="row">
+        <p class="text-start border">Texte aligné au début de l'élément.</p>
+        <p class="text-center border">Texte aligné au centre de l'élément.</p>
+        <p class="text-end border">Texte aligné à la fin de l'élément.</p>
+      </div>
+      <hr />
+      <h2>Exemples de boutons / liens</h2>
+      <button type="button" class="btn btn-primary">Bouton primary</button>
+      <a class="btn btn-danger" href="#" role="button">Lien danger</a>
+      <hr />
+      <h2>Icones linkedIn via Bootstrap</h2>
+      <a href="”mon" lien linkedin” target="”_blank”">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <hr />
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

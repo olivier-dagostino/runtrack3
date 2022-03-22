@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container > .row > .col-1 {
+  text-align: center;
+}
+.background-color-main {
+  background-color: #dcdcdc;
+}
+
+.background-color-bonjourmonde {
+  background-color: #e9ecef;
+}
+
+.li-size {
+  width: 150px;
+  align-items: center;
+  text-align: start;
+  padding-left: 20px;
+}
+
+li :hover{
+    background-color: blue;
+}
